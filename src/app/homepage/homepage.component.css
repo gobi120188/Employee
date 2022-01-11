@@ -1,0 +1,62 @@
+.homemaindiv{
+  width:100%;
+  background-color: orange;
+  height:400px;
+  position: relative;
+}
+.reademp{
+   position:absolute;
+   left:8px;
+   width:50%;
+   height:380px;
+
+   top:25px;
+   color: navajowhite;
+   font-size: xx-large;
+   cursor: pointer;
+
+}
+label{
+ position: relative;
+ top:160px;
+ left: 100px;
+ cursor: pointer;
+
+}
+.crudlable{
+  left: 25px;
+}
+
+.CRUD{
+  position:absolute;
+  left:650px;
+  width:48%;
+  height:380px;
+
+  top:25px;
+  color: navajowhite;
+   font-size: xx-large;
+   cursor: pointer;
+
+}
+
+
+.loading{
+  position:relative;
+  left:40px;
+  width:90%;
+  height:380px;
+  background-color: tomato;
+  top:30px;
+  color: white;
+  font-size: 100px;
+
+}
+
+.loadtext{
+  position: relative;
+  top:180px;
+  left:320px;
+}
+
+

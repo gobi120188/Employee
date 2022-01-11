@@ -1,0 +1,236 @@
+
+@media screen and (min-width: 300px) {
+
+  .logincontrols{
+    height:200px;
+    width:450px;
+    background-color: orange;
+    border: 2px dotted orangered;
+    margin:20px;
+    margin-left: 30px;
+    margin-top: 20px;
+  position:relative;
+
+
+  }
+
+  .inputuser{
+    position: relative;
+    left:33px;
+    top:5px;
+  }
+  .inputpassword{
+    position: relative;
+    left:8px;
+    top:10px;
+  }
+  .labelcnt{
+    color: white;
+    position: relative;
+    left: 5px;
+    top:5px;
+  }
+
+  .btn{
+    position: relative;
+    left:170px;
+    top:20px;
+  }
+
+
+  .error{
+    color:red;
+    position:relative;
+    left:34px;
+    top:2px;
+    font-size: smaller;
+  }
+
+  .passworderror{
+    color:red;
+    position:relative;
+    left:8px;
+    top:2px;
+    font-size: smaller;
+
+
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+
+  .logincontrols{
+    height:300px;
+    width:550px;
+    background-color: orange;
+    border: 2px dotted orangered;
+    margin:25px;
+    margin-left: 32px;
+    margin-top: 22px;
+  position:relative;
+
+
+  }
+
+  .inputuser{
+    position: relative;
+    left:75px;
+    top:25px;
+  }
+  .inputpassword{
+    position: relative;
+    left:48px;
+    top:30px;
+  }
+  .labelcnt{
+    color: white;
+    position: relative;
+    left: 35px;
+    top:25px;
+  }
+
+  .btn{
+    position: relative;
+    left:220px;
+    top:40px;
+  }
+
+
+  .error{
+    color:red;
+    position:relative;
+    left:76px;
+    top:22px;
+    font-size: medium;
+  }
+
+  .passworderror{
+    color:red;
+    position:relative;
+    left:52px;
+    top:22px;
+    font-size: medium;
+
+
+  }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .logincontrols{
+    height:400px;
+    width:750px;
+    background-color: orange;
+    border: 2px dotted orangered;
+    margin:25px;
+    margin-left: 62px;
+    margin-top: 22px;
+  position:relative;
+
+
+  }
+
+  .inputuser{
+    position: relative;
+    left:183px;
+    top:85px;
+  }
+  .inputpassword{
+    position: relative;
+    left:150px;
+    top:85px;
+  }
+  .labelcnt{
+    color: white;
+    position: relative;
+    left: 135px;
+    top:75px;
+    font-size: large;
+  }
+
+  .btn{
+    position: relative;
+    left:350px;
+    top:100px;
+  }
+
+
+  .error{
+    color:red;
+    position:relative;
+    left:190px;
+    top:80px;
+    font-size: large;
+  }
+
+  .passworderror{
+    color:red;
+    position:relative;
+    left:160px;
+    top:80px;
+    font-size: large;
+
+
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+.logincontrols{
+  height:250px;
+  width:800px;
+  background-color: orange;
+  border: 2px dotted orangered;
+  margin:100px;
+  margin-left: 210px;
+  margin-top: 70px;
+position:relative;
+
+
+}
+
+.inputuser{
+  position: relative;
+  left:245px;
+  top:30px;
+}
+.inputpassword{
+  position: relative;
+  left:212px;
+  top:30px;
+}
+.labelcnt{
+  color: white;
+  position: relative;
+  left: 200px;
+  top:25px;
+}
+
+.btn{
+  position: relative;
+  left:370px;
+  top:40px;
+}
+
+
+.error{
+  color:red;
+  position:relative;
+  left:270px;
+  top:25px;
+}
+
+.passworderror{
+  color:red;
+  position:relative;
+  left:247px;
+  top:25px;
+
+
+}
+}
+
+

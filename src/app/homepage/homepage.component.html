@@ -1,0 +1,15 @@
+<div class="homemaindiv">
+<div *ngIf="loading" class="loading">
+  <label class="loadtext" >{{loadtext}}</label>
+</div>
+  <div class="reademp" (click)="gotoread()" *ngIf="!loading"
+  [@hovermenu]="hoverread ? 'intialread' : 'onhoverread'" (mouseover)="toglleinread()"
+   (mouseleave)="toglleinread()">
+     <label (click)="gotoread()">{{read}}</label>
+   </div>
+   <div class="CRUD" (click)="gotoemployeecrud()" *ngIf="!loading"
+   [@hovermenu]="hovercrud ? 'intial' : 'onhover'" (mouseover)="toglleincrud()"
+   (mouseleave)="toglleincrud()">
+    <label class="crudlable" (click)="gotoemployeecrud()"> {{crud}}</label>
+   </div>
+  </div>

@@ -1,0 +1,92 @@
+
+.empdata {
+  height: 405px;
+  width: 99%;
+  background-color: orange;
+
+  position: relative;
+  margin-left: 5px;
+}
+.emptable {
+  margin: 5px;
+  width: 95%;
+  position: relative;
+  left: 35px;
+height:430px;
+  background-color: orange;
+
+
+}
+th,
+td {
+
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+th{
+  font-weight: bolder;
+  font-size: medium;
+
+}
+
+table{
+  height:50px;
+  position: relative;
+  top:5px;
+  left: 10px;
+  width: 60%;
+  background-color: tomato;
+}
+
+button {
+  color: white;
+  position: relative;
+  left: 250px;
+  bottom: 20px;
+
+}
+.addbtn {
+  background-color: tomato;
+}
+.editcomp {
+  height: 350px;
+  width: 30%;
+  position: relative;
+  bottom: 410px;
+  left: 800px;
+}
+label{
+  font-size: 70px;
+  color: white;
+  top:160px;
+  left:250px;
+  position: relative;
+}
+
+button:hover{
+  background-color: brown;
+}
+
+table tr:hover{
+  background-color: burlywood;
+}
+
+th:hover{
+  background-color: chocolate;
+}
+
+button:hover{
+ border: 5px solid brown;
+}
+
+.icon:hover{
+  background-color: green;
+}
+
+
+
+mat-icon:hover{
+  background-color: crimson;
+}

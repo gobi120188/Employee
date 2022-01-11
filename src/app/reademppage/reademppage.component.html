@@ -1,0 +1,44 @@
+
+
+<div class="sortbuttons">
+
+  <button (click)="SortByEmpID()"  class="sortbutton">SortByEmpID</button>
+ <button (click)="SortByEmpName()" class="sortbutton">SortByEmpName</button>
+ <button (click)="RemoveSort()"  class="sortbutton"> RemoveSort</button>
+
+ </div>
+
+<div class="empdata">
+
+
+  <div class="emptable">
+    <table>
+      <tr>
+        <th>EMP ID</th>
+        <th>NAME</th>
+        <th>TOTAL EXPERIENCE</th>
+        <th>SKILLS</th>
+        <th>LOCATION</th>
+        <th>SALARY</th>
+      </tr>
+
+      <tr *ngFor="let emp of empdata | slice:start:end ; let i = index">
+        <td>{{emp.empid}}</td>
+        <td>{{emp.name | uppercase}}</td>
+        <td>{{emp.experience}}</td>
+        <td>{{emp.skills}}</td>
+        <td>{{emp.location | uppercase}}</td>
+        <td>{{emp.salary}}</td>
+             </tr>
+    </table>
+  </div>
+
+  <span *ngFor="let emp of empdata; let i=index">
+    <button *ngIf="i==rowperpage" (click)="setpage(1)" [ngStyle]="getstlye(1)">1</button>
+    <button *ngIf="i % rowperpage==0 && i>0" (click)="setpage((i/rowperpage)+1)"
+      [ngStyle]="getstlye((i/rowperpage)+1)">{{(i/rowperpage)+1}}</button>
+  </span>
+
+
+
+</div>

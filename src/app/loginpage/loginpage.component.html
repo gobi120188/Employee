@@ -1,0 +1,45 @@
+<div class="logincontrols">
+  <div class="loginmodel">
+    <form #loginform="ngForm" (ngSubmit)="login()">
+      <label class="labelcnt">Enter the Name</label>
+    <mat-form-field class="example-form-field inputuser" appearance="fill">
+
+      <mat-label>Enter name</mat-label>
+      <input name="username" matInput type="text" [(ngModel)]="username" required
+      #usernamemodel="ngModel">
+      <button *ngIf="username" matSuffix mat-icon-button aria-label="Clear" (click)="username=''">
+        <mat-icon>close</mat-icon>
+      </button>
+
+    </mat-form-field>
+    <span class="error" *ngIf="(!usernamemodel.valid) && usernamemodel.dirty" >Enter the username</span>
+  <br>
+  <label class="labelcnt">Enter the Password</label>
+    <mat-form-field class="example-form-field inputpassword" appearance="fill">
+      <mat-label>Enter the Password</mat-label>
+      <input name="password" matInput type="password" [(ngModel)]="password" required
+      #passwordmemodel="ngModel">
+      <button *ngIf="password" matSuffix mat-icon-button aria-label="Clear" (click)="password=''">
+        <mat-icon>close</mat-icon>
+        </button>
+
+    </mat-form-field>
+    <span class="passworderror" *ngIf="!passwordmemodel.valid && passwordmemodel.dirty" >Enter the password</span>
+    <br>
+
+
+
+    <button [disabled]="!loginform.form.valid"
+    mat-raised-button color="primary" class="btn"
+     [@hovermenu]="getstate()"
+     (mousemove)="hover()" (mouseleave)="hleave()">Login</button>
+
+
+
+
+  </form>
+  </div>
+
+  </div>
+
+

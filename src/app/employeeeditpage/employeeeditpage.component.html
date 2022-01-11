@@ -1,0 +1,79 @@
+<diV class="editform" *ngIf="action=='update'">
+  <h4> EMPLOYEE FORM</h4>
+
+
+  <form [formGroup]="empformupdate">
+    <label>Emp ID:</label>
+
+      <input type="number" formControlName="empid"
+        placeholder="*Enter the EmpID">
+
+      <br>
+    <label>Name:</label>
+    <input class="nameip" type="text" formControlName="name"
+    placeholder="*Enter Name-MinLength 2 Char" #name>
+    <br>
+
+    <label>Experience:</label>
+    <input class="ex" type="number" formControlName="experience" >
+    <br>
+    <div *ngIf="empformupdate.get('experience').value">
+      <label>Skills:</label>
+      <input class="skillsip" type="text" formControlName="skills" placeholder="*Enter Skills">
+      <br>
+    </div>
+
+    <label>Location:</label>
+    <input class="locationip" type="text" formControlName="location">
+    <br>
+    <label>Salary:</label>
+    <input class="salaryip" type="number" formControlName="salary" >
+    <br>
+    <button (click)="update()" *ngIf="hideUpdate==false" [disabled]="!empformupdate.valid">Update</button>
+    <button (click)="AddEmp()" *ngIf="hideAdd==false" [disabled]="!empformupdate.valid">Add</button>
+    <button (click)="close()">Close</button>
+
+  </form>
+
+</diV>
+
+
+<diV class="editform" *ngIf="action=='add'">
+  <h4> EMPLOYEE FORM</h4>
+
+
+  <form [formGroup]="empformadd">
+    <label>Emp ID:</label>
+
+      <input type="number" formControlName="empid"
+        placeholder="*Enter the EmpID">
+
+      <br>
+    <label>Name:</label>
+    <input class="nameip" type="text" formControlName="name"
+    placeholder="*Enter Name-MinLength 2 Char" #name>
+    <br>
+
+    <label>Experience:</label>
+    <input class="ex" type="number" formControlName="experience">
+    <br>
+    <div *ngIf="empformadd.get('experience').value">
+      <label>Skills:</label>
+      <input class="skillsip" type="text" formControlName="skills" placeholder="*Enter Skills">
+      <br>
+    </div>
+
+    <label>Location:</label>
+    <input class="locationip" type="text" formControlName="location">
+    <br>
+    <label>Salary:</label>
+    <input class="salaryip" type="number" formControlName="salary">
+    <br>
+
+    <button (click)="update()" *ngIf="hideUpdate==false" [disabled]="!empformadd.valid">Update</button>
+    <button (click)="AddEmp()" *ngIf="hideAdd==false" [disabled]="!empformadd.valid">Add</button>
+    <button (click)="close()">Close</button>
+
+  </form>
+
+</diV>

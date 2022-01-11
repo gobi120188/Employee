@@ -1,0 +1,72 @@
+.editform{
+position: relative;
+background-color: tomato;
+height:280px;
+top:22px;
+}
+
+form{
+  position: relative;
+  left:15px;
+  right:3px;
+  background-color: tomato;
+  width:90%;
+
+}
+
+input{
+  position: relative;
+  left:41px;
+  height:20px;
+  width:200px;
+}
+.nameip{
+  position: relative;
+  left:50.5px;
+}
+.ex{
+
+  position: relative;
+  left:10.5px;
+
+}
+.skillsip{
+  position: relative;
+  left:56px;
+}
+.locationip{
+  position: relative;
+  left:29px;
+}
+.salaryip{
+  position: relative;
+  left:48.5px;
+}
+
+
+label, h4{
+  color:white;
+  font-size: large;
+
+}
+h4{
+  position: relative;
+  left:110px;
+  top:15px;
+}
+button{
+  position:relative;
+  background-color: orangered;
+  left:110px;
+  height:55px;
+  width: 70px;
+  cursor: pointer;
+  border:5px solid tomato;
+  border-radius: 20px;
+  top:10px;
+
+}
+
+button:hover{
+  background-color: green;
+}

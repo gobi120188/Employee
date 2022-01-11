@@ -1,0 +1,70 @@
+.empdata {
+  height: 370px;
+  width: 100%;
+  background-color: orange;
+
+  position: relative;
+  top:30px;
+}
+
+th,
+td {
+  border: 1px solid white;
+  top: 3px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+table {
+  background-color: brown;
+  border: 1px solid black;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  width: 98%;
+  height:320px;
+
+}
+
+
+.emptable {
+  margin: 3px;
+  height: 370px;
+  width: 96%;
+  position: relative;
+  left: 20px;
+  background-color: orange;
+}
+
+
+button{
+  left:500px;
+  position: relative;
+  height:30px;
+  width:50px;
+  bottom:28px;
+}
+
+button:hover{
+  border:5px solid gold
+}
+
+tr:hover{
+  background-color: gray;
+}
+
+.sortbutton{
+   height:30px;
+   width:120px;
+   position:relative;
+   left:35px;
+   top:15px;
+   background-color: orangered;
+   color: white;
+   border-radius: 20px 10px;
+}
+
+.sortbutton:hover{
+  background-color: green;
+}
